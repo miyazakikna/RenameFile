@@ -3,11 +3,11 @@
 import glob
 import os
 
-# 拡張子.pngのファイルを取得する
+# 拡張子.pngの画像ファイルを取得する
 path = './dir/*.png'
 i = 1
 
-# pngファイルを取得する
+# 画像ファイルを取得する
 before_file_list = glob.glob(path)
 print('変更前')
 print(before_file_list)
