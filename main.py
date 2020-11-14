@@ -3,20 +3,20 @@
 import glob
 import os
 
-# 拡張子.txtのファイルを取得する
-path = './dir/*.txt'
+# 拡張子.pngのファイルを取得する
+path = './dir/*.png'
 i = 1
 
-# txtファイルを取得する
-beforeFileList = glob.glob(path)
+# pngファイルを取得する
+before_file_list = glob.glob(path)
 print('変更前')
-print(beforeFileList)
+print(before_file_list)
 
-# ファイル名を一括で変更する(留意点：事前にバックアップを取っておくこと)
-for file in beforeFileList:
-    os.rename(file, './dir/sample' + str(i) + '.txt')
+# ファイル名を一括で変更する
+for file in before_file_list:
+    os.rename(file, './dir/icon' + str(i) + '.png')
     i += 1
 
-AfterFileList = glob.glob(path)
+after_file_ist = glob.glob(path)
 print('変更後')
-print(AfterFileList)
+print(after_file_ist)
